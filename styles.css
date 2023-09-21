@@ -1,0 +1,143 @@
+/* External CSS file */
+
+/* Add your CSS styling here */
+body { font-family:Verdana, Arial, sans-serif;
+}
+#wrapper { background-color: #3c2746; 
+        color: #000066;
+        width: 80%;
+        margin: auto;
+} 
+header { background-color: #869dc7;
+     color: #00005D; 
+     padding: 10px;
+}
+header h1 { padding-left: 20px;
+}
+header span { font-style: italic;
+           font-weight: bold;
+           color: #00005D;
+           padding-right: 15px;
+           text-align: right;
+           display: block; 
+}
+nav { float: left;
+    width: 150px;
+    letter-spacing:0.1em;
+    font-weight: bold;
+} 
+nav ul { list-style-type: none; 
+      margin: 0;
+      padding: 0;
+}
+nav li { padding: 15px;
+}
+nav a { text-decoration: none; 
+}
+nav a:link { color: #ffffff; }
+nav a:visited { color: #eaeaea; }
+nav a:hover {  color: #869dc7;}
+main { background-color: #ffffff;
+        color: #000000;
+        padding: 10px 20px;
+        margin-left: 150px;
+        overflow: auto; 
+} 
+nav ul ul { position: relative;
+
+    background-color: #5564A0;
+    padding: 0;
+    display: none; 
+    text-align: left;
+}
+nav ul ul li { border: 1px solid  #00005D;
+     display: block;
+    width: auto;
+    padding-left: 1em;
+    margin-left: 0; 
+}
+
+nav li:hover ul { display: block; }
+
+h2 { color: #869dc7; 
+  font-family: arial, sans-serif;
+  margin: 5px;
+}
+
+#IDPhoto {   float: right;
+        margin: 10px;
+        padding-left: 20px;
+}
+#gallery { display: inline-block;
+    width: 180px;
+    padding-bottom: 10px;
+    background-color: #EAEAEA;
+}
+#gallery span{ display: none; }
+#gallery a:hover span{display: block; 
+    position: absolute;
+    top: 70px; 
+    left: 600px; 
+    text-align: center; }
+figcaption { text-align: center;
+        font-style: italic;
+        font-family: Georgia, serif; 
+}
+
+
+footer {font-size:70%;
+      text-align: center;
+      padding: 10px;
+      background-color: #869dc7;
+      clear: both;
+}
+header, main, nav, footer, figure, figcaption { display: block; }
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+	body { margin: 0; }
+	#wrapper { width: auto; }                                                              
+	main { margin-left: 0; }
+	nav { float: none; 
+          width: auto; 
+          padding: 0; }
+	nav li { display: block; 
+               padding: 0; }
+	nav ul { text-align: center; 
+        padding: 0; }
+	nav a { border-style: none; 
+        display: block;
+        border-bottom: 2px ridge #00005D; 
+        padding: 0.5em 0;}
+	h1, h2 { font-size: 120%; }
+	p { font-size: 90%; }
+    
+    figure { display: none;}
+    #gallery span{ display: none; }
+    nav ul ul { position: relative;
+        left: 0;
+        top: 0;
+        background-color: #5564A0;
+        padding: 0;
+        display: none; 
+        text-align: center;
+    }
+    nav ul ul li { border: none;
+        display: block;
+        width: auto;
+        padding-left: 0;
+        margin-left: 0; 
+    }
+
+}
+
+@media only screen and (max-width: 365px) {
+	h1, h2 { font-size: 100%; }
+	span { font-size: 80%; } 
+ 	nav, nav ul, nav li { padding: 0; }
+
+    }
